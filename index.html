@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>My Favorite Movies</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+            background-color: green;
+            color: white;
+
+            height: 250px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .mytitle>button {
+            width: 250px;
+            height: 50px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 50px;
+
+            margin-top: 20px;
+        }
+
+        .mytitle>button:hover {
+            border: 2px solid white;
+
+        }
+
+        .mycomment {
+            color: gray;
+        }
+
+        .lllimdb {
+            margin-top: 55px;
+        }
+
+        .tsimdb {
+            margin-top: 30px;
+        }
+
+        .ijimdb {
+            margin-top: 32px;
+        }
+
+        .cards {
+            width: 1500px;
+            margin: 20px auto 50px auto;
+        }
+        .mypost {
+            width: 500px;
+            margin: 20px auto 20px auto;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0px 0px 10px 0px gray;
+        }
+        .mybutton {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .mybutton > button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>My Favorite Movies</h1>
+        <button>Add Movies</button>
+    </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">link to movie</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">comments</label>
+        </div>
+        <div class="mybutton">
+            <button type="button" class="btn btn-dark">Add</button>
+            <button type="button" class="btn btn-outline-dark">Close</button>
+
+        </div>
+    </div>
+    <div class="cards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTAyMjQ3OTAxMzNeQTJeQWpwZ15BbWU4MDU0NzA1MzAx._V1_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Hunger Games: Catching Fire</h5>
+                        <p class="card-text">In the second installment of the Hunger Games series, Katniss and Peeta are
+                            forced to return to the arena to compete against previous victors in a special edition of
+                            the games known as the Quarter Quell, all while facing political turmoil and rebellion in
+                            the districts.
+                        </p>
+                        <p>IMDB Rating: 7.5/10 </p>
+                        <p class="mycomment"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/91jrKX9xjQL.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">La La Land</h5>
+                        <p class="card-text">La La Land follows the love story of an aspiring actress and a struggling
+                            jazz musician in Los Angeles as they pursue their dreams and navigate the challenges of
+                            their relationship and careers.
+                        <p class="lllimdb">IMDB Rating: 8.0/10 </p>
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/p_toystory3_19639_3c584e1f.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toy Story 3</h5>
+                        <p class="card-text">In Toy Story 3, Andy's toys face a new adventure as they are accidentally
+                            donated to a daycare center and must escape the clutches of the tyrannical Lots-O'-Huggin'
+                            Bear to make their way back to their owner before he leaves for college.
+                        </p>
+                        <p class="tsimdb">IMDB Rating: 8.3/10 </p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/M/MV5BY2Q0ODg4ZmItNDZiYi00ZWY5LTg2NzctNmYwZjA5OThmNzE1XkEyXkFqcGdeQXVyMjM4MzQ4OTQ@._V1_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Indiana Jones and the Last Crusade</h5>
+                        <p class="card-text">In "Indiana Jones and the Last Crusade," Indiana teams up with his father
+                            to find the Holy Grail before the Nazis do. Along the way, they face challenges and puzzles,
+                            confront old enemies, and learn more about each other.
+                        </p>
+                        <p class="ijimdb">IMDB Rating: 8.2/10 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+</div>
